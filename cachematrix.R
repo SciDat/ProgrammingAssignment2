@@ -33,7 +33,7 @@ cacheSolve <- function(x, ...) {
     return(s)
   }
   data <- x$ get()
-  s <- solve(data, ...)  ##If its a new matrix then solve and cache its inverse
+  s <- solve(data, ...)  ## If its a new matrix then solve and cache its inverse
   x$setsolve(s)
   s       ## Return a matrix that is the inverse of 'x'
 }
